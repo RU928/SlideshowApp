@@ -9,11 +9,81 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var imageView: UIImageView!
+    var image1 = UIImage(named: "parao.jpg")
+    var image2 = UIImage(named: "multa.jpeg")
+    var image3 = UIImage(named: "roma.jpg")
+    var counter = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    imageView.image = image1
+    
     }
+    
+    
+    @IBAction func next(_ sender: Any) {
+        if counter == 0 && PSBtn != 1{
+            imageView.image = image2
+            counter = 1
+        }else if counter == 1 && PSBtn != 1{
+            imageView.image = image3
+            counter = 2
+        }else if counter == 2 && PSBtn != 1{
+            imageView.image = image1
+            counter = 0
+        }
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        if counter == 0 && PSBtn != 1{
+            imageView.image = image3
+            counter = 2
+        }else if counter == 2 && PSBtn != 1{
+            imageView.image = image2
+            counter = 1
+        }else if counter == 1 && PSBtn != 1{
+            imageView.image = image1
+            counter = 0
+        }
+    }
+    
+    var timer: Timer!
+    var PSBtn = 0
+    var slideCount = 0
+    @IBOutlet weak var Btntitle: UIButton!
+    
+    @IBAction func playStop(_ sender: Any) {
+        if PSBtn == 0{
+            timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(slideShow), userInfo: nil, repeats: true)
+            PSBtn = 1
+            Btntitle.setTitle("停止", for: .normal)
+        }else{
+            timer.invalidate()
+            PSBtn = 0
+            Btntitle.setTitle("再生", for: .normal)
+        }
+    }
+    
+    func slideShow(time: Timer){
+        if slideCount == 0{
+        imageView.image = image1
+        slideCount = 1
+        }else if slideCount == 1{
+            imageView.image = image2
+            slideCount = 2
+        }else{
+            imageView.image = image3
+            slideCount = 0
+        }
+    }
+        
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

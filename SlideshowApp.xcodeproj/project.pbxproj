@@ -14,6 +14,9 @@
 		2A5765671EAF35AE00AC00A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5765651EAF35AE00AC00A8 /* LaunchScreen.storyboard */; };
 		2A5765721EAF35AE00AC00A8 /* SlideshowAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5765711EAF35AE00AC00A8 /* SlideshowAppTests.swift */; };
 		2A57657D1EAF35AE00AC00A8 /* SlideshowAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A57657C1EAF35AE00AC00A8 /* SlideshowAppUITests.swift */; };
+		2A57658D1EAF35F000AC00A8 /* parao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A57658A1EAF35F000AC00A8 /* parao.jpg */; };
+		2A57658E1EAF35F000AC00A8 /* multa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2A57658B1EAF35F000AC00A8 /* multa.jpeg */; };
+		2A57658F1EAF35F000AC00A8 /* roma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A57658C1EAF35F000AC00A8 /* roma.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		2A5765591EAF35AE00AC00A8 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A57655C1EAF35AE00AC00A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A57655E1EAF35AE00AC00A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A57655E1EAF35AE00AC00A8 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2A5765611EAF35AE00AC00A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A5765631EAF35AE00AC00A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A5765661EAF35AE00AC00A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		2A5765781EAF35AE00AC00A8 /* SlideshowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A57657C1EAF35AE00AC00A8 /* SlideshowAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowAppUITests.swift; sourceTree = "<group>"; };
 		2A57657E1EAF35AE00AC00A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A57658A1EAF35F000AC00A8 /* parao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parao.jpg; sourceTree = "<group>"; };
+		2A57658B1EAF35F000AC00A8 /* multa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = multa.jpeg; sourceTree = "<group>"; };
+		2A57658C1EAF35F000AC00A8 /* roma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roma.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 				2A5765701EAF35AE00AC00A8 /* SlideshowAppTests */,
 				2A57657B1EAF35AE00AC00A8 /* SlideshowAppUITests */,
 				2A57655A1EAF35AE00AC00A8 /* Products */,
+				2A57658A1EAF35F000AC00A8 /* parao.jpg */,
+				2A57658B1EAF35F000AC00A8 /* multa.jpeg */,
+				2A57658C1EAF35F000AC00A8 /* roma.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,6 +247,9 @@
 				2A5765671EAF35AE00AC00A8 /* LaunchScreen.storyboard in Resources */,
 				2A5765641EAF35AE00AC00A8 /* Assets.xcassets in Resources */,
 				2A5765621EAF35AE00AC00A8 /* Main.storyboard in Resources */,
+				2A57658D1EAF35F000AC00A8 /* parao.jpg in Resources */,
+				2A57658F1EAF35F000AC00A8 /* roma.jpg in Resources */,
+				2A57658E1EAF35F000AC00A8 /* multa.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
