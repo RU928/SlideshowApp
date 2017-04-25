@@ -81,7 +81,15 @@ class ViewController: UIViewController {
             counter = 2
         }
     }
-        
+    
+    @IBAction func segueBtn(_ sender: Any) {
+        if PSBtn == 1{
+        timer.invalidate()
+        PSBtn = 0
+        Btntitle.setTitle("再生", for: .normal)
+        }
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -96,6 +104,8 @@ class ViewController: UIViewController {
     @IBAction func unwind(segue: UIStoryboardSegue){
         
     }
+    
+    
 
 }
 
