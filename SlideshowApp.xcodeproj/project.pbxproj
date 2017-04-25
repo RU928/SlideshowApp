@@ -17,6 +17,7 @@
 		2A57658D1EAF35F000AC00A8 /* parao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A57658A1EAF35F000AC00A8 /* parao.jpg */; };
 		2A57658E1EAF35F000AC00A8 /* multa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2A57658B1EAF35F000AC00A8 /* multa.jpeg */; };
 		2A57658F1EAF35F000AC00A8 /* roma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A57658C1EAF35F000AC00A8 /* roma.jpg */; };
+		2A5765911EAF514000AC00A8 /* BiggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5765901EAF514000AC00A8 /* BiggerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2A57658A1EAF35F000AC00A8 /* parao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parao.jpg; sourceTree = "<group>"; };
 		2A57658B1EAF35F000AC00A8 /* multa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = multa.jpeg; sourceTree = "<group>"; };
 		2A57658C1EAF35F000AC00A8 /* roma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roma.jpg; sourceTree = "<group>"; };
+		2A5765901EAF514000AC00A8 /* BiggerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiggerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				2A57655C1EAF35AE00AC00A8 /* AppDelegate.swift */,
 				2A57655E1EAF35AE00AC00A8 /* ViewController.swift */,
 				2A5765601EAF35AE00AC00A8 /* Main.storyboard */,
+				2A5765901EAF514000AC00A8 /* BiggerViewController.swift */,
 				2A5765631EAF35AE00AC00A8 /* Assets.xcassets */,
 				2A5765651EAF35AE00AC00A8 /* LaunchScreen.storyboard */,
 				2A5765681EAF35AE00AC00A8 /* Info.plist */,
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5765911EAF514000AC00A8 /* BiggerViewController.swift in Sources */,
 				2A57655F1EAF35AE00AC00A8 /* ViewController.swift in Sources */,
 				2A57655D1EAF35AE00AC00A8 /* AppDelegate.swift in Sources */,
 			);

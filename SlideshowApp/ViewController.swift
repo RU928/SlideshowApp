@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     
     var timer: Timer!
     var PSBtn = 0
-    var slideCount = 0
+   
     @IBOutlet weak var Btntitle: UIButton!
     
     @IBAction func playStop(_ sender: Any) {
@@ -70,26 +70,32 @@ class ViewController: UIViewController {
     }
     
     func slideShow(time: Timer){
-        if slideCount == 0{
+        if counter == 2{
         imageView.image = image1
-        slideCount = 1
-        }else if slideCount == 1{
+        counter = 0
+        }else if counter == 0{
             imageView.image = image2
-            slideCount = 2
+            counter = 1
         }else{
             imageView.image = image3
-            slideCount = 0
+            counter = 2
         }
     }
         
     
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let biggerViewController: BiggerViewController = segue.destination as! BiggerViewController
+      biggerViewController.x = counter
+    }
 
+    @IBAction func unwind(segue: UIStoryboardSegue){
+        
+    }
 
 }
 
