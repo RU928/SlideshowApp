@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     }
     
     
+       
     @IBAction func next(_ sender: Any) {
         if counter == 0 && PSBtn != 1{
             imageView.image = image2
