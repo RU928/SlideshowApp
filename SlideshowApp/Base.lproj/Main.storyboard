@@ -84,7 +84,9 @@
                     </view>
                     <connections>
                         <outlet property="Btntitle" destination="vuo-Yl-0yX" id="nst-Tv-1Yy"/>
+                        <outlet property="backBtn" destination="0O8-H6-TSX" id="Pb9-Vz-ZOS"/>
                         <outlet property="imageView" destination="6NK-gF-Jej" id="dK5-uo-N5Q"/>
+                        <outlet property="nextBtn" destination="vBU-Fx-BuJ" id="6It-Uh-rlq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

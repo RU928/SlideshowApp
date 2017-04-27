@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     var image3 = UIImage(named: "roma.jpg")
     var counter = 0
     
+    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var backBtn: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,30 +31,28 @@ class ViewController: UIViewController {
     
        
     @IBAction func next(_ sender: Any) {
-        if counter == 0 && PSBtn != 1{
+        if counter == 0 {
             imageView.image = image2
             counter = 1
-        }else if counter == 1 && PSBtn != 1{
+        }else if counter == 1 {
             imageView.image = image3
             counter = 2
-        }else if counter == 2 && PSBtn != 1{
+        }else if counter == 2{
             imageView.image = image1
             counter = 0
-        }
-    }
+        }    }
     
     @IBAction func back(_ sender: Any) {
-        if counter == 0 && PSBtn != 1{
+        if counter == 0{
             imageView.image = image3
             counter = 2
-        }else if counter == 2 && PSBtn != 1{
+        }else if counter == 2{
             imageView.image = image2
             counter = 1
-        }else if counter == 1 && PSBtn != 1{
+        }else if counter == 1{
             imageView.image = image1
             counter = 0
-        }
-    }
+        }    }
     
     var timer: Timer!
     var PSBtn = 0
@@ -63,10 +64,14 @@ class ViewController: UIViewController {
             timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(slideShow), userInfo: nil, repeats: true)
             PSBtn = 1
             Btntitle.setTitle("停止", for: .normal)
+            nextBtn.isEnabled = false
+            backBtn.isEnabled = false
         }else{
             timer.invalidate()
             PSBtn = 0
             Btntitle.setTitle("再生", for: .normal)
+            nextBtn.isEnabled = true
+            backBtn.isEnabled = true
         }
     }
     
